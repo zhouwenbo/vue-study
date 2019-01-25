@@ -1,0 +1,16 @@
+html, body{
+    margin: 5px;
+    padding: 0;
+}
+
+.show_div{
+    text-align: center; /*这个属性可以让text居中*/
+    width: 60%;
+    border: 3px solid green;
+    margin: auto; /** 这个属性可以让div 居中*/
+}
+
+.show_span{
+    color: orange;
+}
+
