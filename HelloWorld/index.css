@@ -59,7 +59,7 @@ body {
 .flex_div_1 {
     /* display: flex; */
     border: 3px solid green;
-    width: 60%;
+    width: 40%;
     flex-shrink: 0;
 }
 
@@ -75,10 +75,18 @@ body {
     overflow: hidden;
 }
 
+.nav3 {
+    width: 18%;
+    border: 3px solid skyblue;
+    float: left;
+    box-sizing: border-box;
+
+}
+
 .float_div_3 {
     /* display: flex; */
     border: 3px solid green;
-    width: 60%;
+    width: 42%;
     float: left;
     box-sizing: border-box;
 }

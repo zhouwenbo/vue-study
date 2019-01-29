@@ -113,6 +113,12 @@
             <div class="center_h">
                 <p>采用float的布局方式</p>
             </div>
+
+            <div class="nav3">
+                <ul>
+                    <li v-for="(item,index) in titles"><a v-bind:href="'http://zh.learnlayout.com/position-example.html?id='+item.id">{{item.text}}</a></li>
+                </ul>
+            </div>
             <div class="float_div_3">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
