@@ -4,3 +4,90 @@ body {
     padding: 0;
 
 }
+
+.center_h {
+    margin: 0px auto;
+    text-align: center;
+    color: red;
+    font-size: 22px;
+}
+
+.container {
+    position: relative;
+    border: 3px solid salmon;
+    width: 80%;
+    margin: 5px auto;
+
+}
+
+.nav {
+    position: absolute;
+    width: 200px;
+    border: 3px solid skyblue;
+}
+
+.section_container {
+    position: relative;
+    margin-left: 200px;
+    border: 3px solid sandybrown;
+}
+
+.p_div_1 {
+    border: 3px solid green;
+}
+
+.p_div_2 {
+    border: 3px solid slateblue;
+}
+
+.container2_parent {
+    border: 3px solid salmon;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.container2 {
+    display: flex;
+}
+
+.nav2 {
+    width: 200px;
+    border: 3px solid skyblue;
+    flex-shrink: 0;
+}
+
+.flex_div_1 {
+    /* display: flex; */
+    border: 3px solid green;
+    width: 60%;
+    flex-shrink: 0;
+}
+
+.flex_div_2 {
+    /* display: flex; */
+    border: 3px solid slateblue;
+}
+
+.container3 {
+    width: 80%;
+    border: 3px solid salmon;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.float_div_3 {
+    /* display: flex; */
+    border: 3px solid green;
+    width: 60%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.float_div_4 {
+    /* display: flex; */
+    border: 3px solid slateblue;
+    float: left;
+    width: 40%;
+    box-sizing: border-box;
+
+}

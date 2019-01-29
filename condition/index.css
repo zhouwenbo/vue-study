@@ -1,16 +1,58 @@
-html, body{
+html,
+body {
     margin: 5px;
     padding: 0;
 }
 
-.show_div{
-    text-align: center; /*这个属性可以让text居中*/
+.show_div {
+    text-align: center;
+    /*这个属性可以让text居中*/
     width: 60%;
     border: 3px solid green;
-    margin: auto; /** 这个属性可以让div 居中*/
+    margin: 30px auto;
+    /** 这个属性可以让div 居中*/
 }
 
-.show_span{
-    color: orange;
+.component_div {
+    margin-top: 20px;
 }
 
+.container_one {
+    position: relative;
+}
+
+.student_style {
+    margin: 0;
+}
+
+.div_left_one {
+    position: absolute;
+    width: 200px;
+}
+
+
+.div_left_two {
+    position: relative;
+    left: 200px;
+    width: 30%;
+}
+
+.relative_one {
+    position: relative;
+    border: 3px solid salmon;
+}
+
+.relative_two {
+    position: relative;
+    top: -8px;
+    left: 20px;
+    border: 3px solid salmon;
+}
+
+.img_title {
+    color: burlywood;
+    font-size: 18px;
+}
+.img_a {
+    float: right;
+}
