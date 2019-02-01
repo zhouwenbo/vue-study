@@ -1,0 +1,37 @@
+html,
+body {
+    margin: 5px;
+    padding: 0;
+}
+
+.main_container {
+    display: flex;
+    border: 2px solid palegreen;
+    width: 100%;
+}
+
+.container_a {
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid saddlebrown;
+}
+
+.container_b {
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid sandybrown;
+}
+
+.container_c {
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid salmon;
+}
+
+.container_cb_array {
+    margin-top: 10px;
+}
+

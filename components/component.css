@@ -1,0 +1,17 @@
+
+html,
+body {
+    margin: 5px;
+    padding: 0;
+}
+
+.title {
+    color: palevioletred;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.center_h {
+    margin: 20px auto;
+    width: 80%;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>input</title>
+
+    <link rel="stylesheet" href="input.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.11/lodash.min.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <div class="main_container">
+
+
+            <div class="container_a">
+
+                <input type="text" v-model="message" placeholder="输入你的名字" />
+                <p>{{message}}</p>
+
+                <input type="checkbox" v-model="enableRefresh" id="cb_eanbale_refresh" />
+                <label for="cb_eanbale_refresh">{{enableRefresh}}</label>
+
+                <div class="container_cb_array">
+                    <input type="checkbox" v-model="checkedNames" value="张良" id="zl" />
+                    <label for="zl">张良</label>
+                    <input type="checkbox" v-model="checkedNames" value="韩信" id="hx" />
+                    <label for="hx">韩信</label>
+                    <input type="checkbox" v-model="checkedNames" value="萧何" id="xh" />
+                    <label for="xh">萧何</label>
+                    <input type="checkbox" v-model="checkedNames" value="陈平" id="cp" />
+                    <label for="cp">陈平</label>
+                </div>
+                <div>
+                    <ul>
+                        <li v-for="(item,index) in checkedNames">{{index}}-{{item}}</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <input type="radio" value="宝马X6" id="baoma_ra" v-model="carSelected" />
+                    <label for="baoma_ra">宝马X6</label>
+                    <input type="radio" value="奔驰S级" id="benchi_s" v-model="carSelected" />
+                    <label for="benchi_s">奔驰S级</label>
+                </div>
+                <div>
+                    <p>选中的汽车是 : {{carSelected}}</p>
+                </div>
+                <div>
+                    <select v-model="computer_select">
+                        <option disabled value="default">请选择其中一项</option>
+                        <option>MacBook Pro</option>
+                        <option>小米笔记本电脑</option>
+                        <option>惠普笔记本电脑</option>
+                        <option>华为笔记本电脑</option>
+                    </select>
+                    <p>选中的电脑是 : {{computer_select}}</p>
+                </div>
+
+                <div>
+                    <select v-model="phone_select">
+                        <option disabled value="">请选中一款你喜欢的手机</option>
+                        <option v-for="(item,index) in phones" v-bind:value="item.id">
+                            {{ item.name }}
+                        </option>
+                    </select>
+
+                    <p>选中的id是：{{phone_select}}</p>
+                </div>
+
+                <div>
+                    <label for="input_phone">电话号码:</label>
+                    <input type="number" v-model.number="phoneNum" placeholder="请输入你的电话号码" id="input_phone" />
+                    <p>输入的电话号码是 : {{phoneNum}}</p>
+                </div>
+            </div>
+
+            <div class="container_b">
+
+            </div>
+
+            <div class="container_c">
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="input.js"></script>
+
+</body>
+
+</html>

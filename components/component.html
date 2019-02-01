@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Component</title>
+
+    <link rel="stylesheet" href="component.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.11/lodash.min.js"></script>
+</head>
+
+<body>
+    <div id="app" class="center_h">
+        <div>
+            <div class="title">
+                <p>基础组件</p>
+            </div>
+            <button-counter></button-counter>
+            <button-counter></button-counter>
+            <button-counter></button-counter>
+        </div>
+        <div>
+            <p class="title">属性组件</p>
+            <blog-post title="我的 Vue 旅程"></blog-post>
+            <blog-post title="Vue 如此有趣"></blog-post>
+            <blog-post title="用 Vue 写博客"></blog-post>
+        </div>
+
+        <div>
+            <p class="title">绑定data数据</p>
+            <div :style="{ fontSize: postFontSize + 'em' }">
+                <blog-post2 v-for="(post,index) in posts" v-bind:post="post" v-bind:key="post.id" v-on:enlarge-text="onEnlargeText">
+                </blog-post2>
+            </div>
+        </div>
+    </div>
+    <script src="component.js"></script>
+</body>
+
+</html>
